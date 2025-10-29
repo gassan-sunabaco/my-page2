@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自己紹介｜がっさん</title>
+<meta name="description" content="がっさん（山方華朱沙）の自己紹介ページ">
+<style>
+/* ===== 秋パステル＋モカブラウン系 ===== */
+:root{
+  --bg:#fff4e6;       /* パステルオレンジ背景 */
+  --card:#fff8f0;     /* カード背景 */
+  --text:#4b2e2e;     /* ダークブラウンテキスト */
+  --muted:#8b6b52;    /* モカブラウン */
+  --accent:#d97757;   /* かぼちゃ色 */
+  --accent-2:#e28f61; /* 紅葉オレンジ */
+  --accent-3:#f5d6b1; /* 焼き芋イメージ */
+  --yellow:#f5e26c;   /* 銀杏イエロー */
+  --border:#f1e0d3;
+  --shadow:0 14px 38px rgba(217,119,87,.15);
+  --radius:16px;
+  --chip:#ffe7d1;
+}
+
+/* ===== 基本 ===== */
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;font-family:"Hiragino Kaku Gothic ProN", sans-serif;color:var(--text);background:var(--bg);line-height:1.75;}
+.wrap{max-width:900px;margin:30px auto;padding:0 18px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;}
+header.hero{display:flex;align-items:center;gap:18px;padding:20px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,var(--accent-3),transparent 90%);}
+.avatar{width:92px;height:92px;border-radius:24px;display:grid;place-items:center;font-weight:800;font-size:30px;color:#fff;background:conic-gradient(from 230deg,var(--accent),#f59e83,#e28f61,var(--accent));box-shadow:inset 0 0 0 6px rgba(255,255,255,.22);user-select:none;}
+.title h1{margin:0 0 6px;font-size:28px;}
+.title .sub{margin:0;color:var(--muted);}
+.chips{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap;}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:var(--chip);color:var(--text);border:1px solid var(--border);font-size:12px;}
+
+/* ===== コンテンツ ===== */
+.content{padding:20px;display:grid;gap:28px;}
+.block{background:linear-gradient(180deg,rgba(217,119,87,.05),transparent 40%);border:1px solid var(--border);border-radius:14px;padding:18px;}
+.block h2{margin:0 0 12px;font-size:18px;}
+.oneword{padding:14px 16px;border:1px dashed var(--border);border-radius:12px;background:#ffe7d1;font-size:15px;}
+dl{display:grid;grid-template-columns:max(120px,35%) 1fr;gap:12px 14px;margin:0;}
+dt{color:var(--muted);}
+dd{margin:0;}
+a.button{display:inline-block;padding:6px 12px;border-radius:12px;text-decoration:none;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent-2));font-weight:600;}
+
+footer{padding:16px 22px 22px;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:13px;}
+
+/* ===== クイズ ===== */
+.quiz-box{background:var(--yellow);border-radius:20px;box-shadow:0 4px 10px rgba(217,119,87,0.2);padding:30px;max-width:400px;margin:0 auto;text-align:center;}
+.quiz-box .question{font-size:1.1rem;margin-bottom:1rem;}
+.quiz-box .choices{display:flex;flex-direction:column;gap:10px;margin-bottom:1.5rem;}
+.quiz-box .choice{background-color:#ffd8b0;border:none;border-radius:25px;padding:10px;cursor:pointer;transition:background-color 0.2s;}
+.quiz-box .choice:hover{background-color:#ffb875;}
+.quiz-box .result{font-size:1.2rem;color:var(--accent);font-weight:bold;display:none;}
+.quiz-box .next-btn{background-color:var(--accent);color:#fff;border:none;border-radius:20px;padding:10px 20px;cursor:pointer;display:none;margin-top:1rem;}
+.quiz-box .next-btn:hover{background-color:var(--accent-2);}
+</style>
+</head>
+<body>
+<main class="wrap">
+<article class="card" role="article">
+<header class="hero">
+  <div class="avatar">が</div>
+  <div class="title">
+    <h1>自己紹介｜がっさん</h1>
+    <p class="sub">通信制の大学1年生 / 熊本県八代市</p>
+    <div class="chips">
+      <span class="chip">#自己紹介</span>
+      <span class="chip">秋が好き</span>
+      <span class="chip">ぴちぴちJD</span>
+    </div>
+  </div>
+</header>
+
+<section class="content">
+  <!-- プロフィール -->
+  <section class="block">
+    <h2>プロフィール</h2>
+    <dl>
+      <dt>ニックネーム</dt><dd>がっさん</dd>
+      <dt>本名</dt><dd>山方 華朱沙</dd>
+      <dt>職業</dt><dd>通信制の大学1年生</dd>
+      <dt>誕生日</dt><dd>10月8日</dd>
+      <dt>居住地</dt><dd>熊本県 八代市</dd>
+      <dt>好きな季節</dt><dd>秋（Autumn）</dd>
+      <dt>理由</dt><dd>秋のカラーは可愛いし、食べ物も美味しいから</dd>
+      <dt>兄弟構成</dt><dd>三姉弟（弟が二人）</dd>
+      <dt>X（旧Twitter）</dt><dd><a class="button" href="https://x.com/xoxoa__a" target="_blank">@xoxoa__a</a></dd>
+    </dl>
+  </section>
+
+  <!-- ひとこと -->
+  <section class="block">
+    <h2>ひとこと</h2>
+    <p class="oneword">
+      めちゃくちゃ未経験で初日からついていけるかめちゃくちゃ不安ですが、手探りで頑張っていこうと思いますので、よろしくお願いします( ⑅﻿ᴗ͈ ᴗ͈)♡
+    </p>
+  </section>
+
+  <!-- クイズ -->
+  <section class="block">
+    <h2>♡ 復習 ♡　がっさんのことどれだけ分かったかな？目指せ全問正解！</h2>
+    <div class="quiz-box">
+      <div class="question" id="question">問題を読み込み中...</div>
+      <div class="choices" id="choices"></div>
+      <div class="result" id="result"></div>
+      <button class="next-btn" id="nextBtn">次の問題へ ▶</button>
+    </div>
+  </section>
+</section>
+
+<footer>
+  © <span id="y"></span> SUNABACO がっさん
+</footer>
+</article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+const quizData=[
+  {question:"誕生日は何月何日？",choices:["１０月８日","５月２８日","２月１４日"],answer:0},
+  {question:"職業は？",choices:["高校生","大学生","社会人"],answer:1},
+  {question:"好きな季節は？",choices:["秋","夏","春"],answer:0},
+  {question:"居住地は？",choices:["北海道","香川","熊本"],answer:2},
+  {question:"兄弟姉妹の数は？",choices:["一人っ子","二人","三人"],answer:2}
+];
+let currentQuiz=0,score=0;
+const questionEl=document.getElementById("question"),
+      choicesEl=document.getElementById("choices"),
+      resultEl=document.getElementById("result"),
+      nextBtn=document.getElementById("nextBtn");
+function loadQuiz(){
+const q=quizData[currentQuiz];
+questionEl.textContent=`Q${currentQuiz+1}. ${q.question}`;
+choicesEl.innerHTML="";resultEl.style.display="none";nextBtn.style.display="none";
+q.choices.forEach((choice,index)=>{
+  const btn=document.createElement("button");
+  btn.textContent=choice;btn.classList.add("choice");
+  btn.addEventListener("click",()=>selectAnswer(index));
+  choicesEl.appendChild(btn);
+});
+}
+function selectAnswer(selected){
+const q=quizData[currentQuiz];
+document.querySelectorAll(".choice").forEach(b=>b.disabled=true);
+if(selected===q.answer){score++;resultEl.textContent="💮 正解！すごいね♡";}
+else{resultEl.textContent=`❌ 残念！正解は「${q.choices[q.answer]}」でした。`;}
+resultEl.style.display="block";nextBtn.style.display="inline-block";
+}
+nextBtn.addEventListener("click",()=>{
+currentQuiz++;
+if(currentQuiz<quizData.length)loadQuiz();
+else showFinalScore();
+});
+function showFinalScore(){
+questionEl.textContent="おつかれさまでした！何問正解できたかな？";
+choicesEl.innerHTML="";
+resultEl.style.display="block";
+resultEl.textContent=`あなたの得点は ${score} / ${quizData.length} 点です！`;
+nextBtn.style.display="none";
+}
+loadQuiz();
+document.getElementById('y').textContent=new Date().getFullYear();
+});
+</script>
+</body>
+</html>
